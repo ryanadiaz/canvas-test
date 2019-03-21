@@ -54,7 +54,14 @@
 </div>
   <script>
     function unitOneSold() {
-      
+      let drawOne = document.getElementById("mapCanvas").getContext("2d");
+
+      drawOne.width = 725;
+      drawOne.height = 681;
+
+      drawOne.fillStyle = "red";
+      drawOne.fillRect(160, 240, 20,20);
+      drawOne.fillText("Sold!", 160, 240);
     }
   </script>
 
